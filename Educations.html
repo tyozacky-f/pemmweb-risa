@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Pendidikan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      min-height: 100vh;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #d5edff, #f4faff, #d3eaff);
+      color: #10458d;
+      font-family: Arial, sans-serif;
+    }
+    .content {
+      width: min(100%, 850px);
+      margin: 0 auto;
+      padding: 28px;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: 1px solid #a6d4ff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px #2868a638;
+    }
+    h1 {
+      margin: 0 0 22px;
+      color: #10458d;
+      font-family: Georgia, serif;
+      text-align: center;
+    }
+    .table-container {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      min-width: 520px;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #a6c9eb;
+      text-align: left;
+    }
+    th {
+      background: #1765c0;
+      color: #ffffff;
+    }
+    tbody tr:nth-child(even) {
+      background: #edf6ff;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 18px 12px;
+      }
+      .content {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="content">
+  <h1>Riwayat Pendidikan</h1>
+    <div class="table-container">
+    <table>
+    <tr>
+      <th>No</th>
+      <th>Jenjang</th>
+      <th>Nama Sekolah</th>
+      <th>Tahun</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SD</td>
+      <td>SD Negeri Kediri</td>
+      <td>2014 - 2020</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SMP</td>
+      <td>SMP Negeri 1 Binong</td>
+      <td>2020 - 2023</td>
+    </tr> 
+    <tr>
+      <td>3</td>
+      <td>SMA</td>
+      <td>SMA Negeri 1 Pagaden</td>
+      <td>2023 - 2026</td>
+    </tr> 
+    <tr>
+      <td>4</td>
+      <td>S1</td>
+      <td>Universitas Mandiri</td>
+      <td>2026 - Sekarang</td>
+    </tr>
+</table>
+    </div>
+  </main>
+</body>
+</html>

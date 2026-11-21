@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Laboratorium Komputer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px 18px;
+            font-family: Arial, sans-serif;
+            color: #10458d;
+            background: linear-gradient(180deg, #d5edff, #f4faff, #d3eaff);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            width: min(100%, 960px);
+            padding: 24px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 1px solid #a6d4ff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px #2868a638;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 700px;
+        }
+        caption {
+            padding: 0 0 14px;
+            color: #10458d;
+            font-size: 20px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+        }
+        th, td {
+            border: 1px solid #a6c9eb;
+            padding: 8px 10px;
+            text-align: left;
+            font-size: 13px;
+            vertical-align: middle;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            background: #1765c0;
+        }
+        tbody tr:nth-child(even) {
+            background: #edf6ff;
+        }
+        .center-text {
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 18px 12px;
+            }
+            .container {
+                padding: 18px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            <!-- Caption / Judul Tabel -->
+            <caption>Jadwal Laboratorium Komputer</caption>
+            
+            <thead>
+                <!-- Header Baris 1 -->
+        <tr>
+             <th rowspan="2">Hari</th>
+             <th colspan="2">Pagi</th>
+             <th colspan="2">Siang</th>
+             <th rowspan="2">Keterangan</th>
+        </tr>
+                <!-- Header Baris 2 (Jam) -->
+                <tr>
+                    <th>08:00 - 10:00</th>
+                    <th>10:00 - 12:00</th>
+                    <th>13:00 - 15:00</th>
+                    <th>15:00 - 17:00</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <!-- Senin - Baris Pertama -->
+                <tr>
+                    <td rowspan="2">Senin</td>
+                    <td>Web 1</td>
+                    <td>Web 2</td>
+                    <td colspan="2">Praktikum Basis Data</td>
+                    <td rowspan="2">Normal</td>
+                </tr>
+                <!-- Senin - Baris Kedua -->
+                <tr>
+                    <td colspan="2">Praktikum Pemrograman</td>
+                    <td>Jaringan</td>
+                    <td>Jaringan</td>
+                </tr>
+
+                <!-- Selasa -->
+                <tr>
+                    <td>Selasa</td>
+                    <td colspan="2">Seminar</td>
+                    <td>Mobile</td>
+                    <td>Mobile</td>
+                    <td>Seminar Pagi</td>
+                </tr>
+
+                <!-- Rabu - Baris Pertama -->
+                <tr>
+                    <td rowspan="2">Rabu</td>
+                    <td>Web</td>
+                    <td>Web</td>
+                    <td colspan="2" rowspan="2">Maintenance Laboratorium</td>
+                    <td rowspan="2">Maintenance</td>
+                </tr>
+                <!-- Rabu - Baris Kedua -->
+                <tr>
+                    <td colspan="2">Basis Data</td>
+                </tr>
+
+                <!-- Kamis -->
+                <tr>
+                    <td>Kamis</td>
+                    <td>Algoritma</td>
+                    <td>Algoritma</td>
+                    <td colspan="2">Praktikum Jaringan</td>
+                    <td>Normal</td>
+                </tr>
+
+                <!-- Catatan / Footer -->
+                <tr>
+                    <th colspan="5">Catatan</th>
+                    <td>Jadwal dapat berubah</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
